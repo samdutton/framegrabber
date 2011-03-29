@@ -1,0 +1,148 @@
+body {
+background: #666;
+font-family: Arial, sans-serif;
+padding: 10px 10px 10px 10px;
+}
+
+div#container {
+margin: 0 auto 0 auto;
+padding: 0 0 0px 0px;
+}
+
+div#framegrabs {
+display: none;
+}
+
+div#noFramegrabs {
+color: #eee;
+display: none;
+width: 300px;
+}
+
+div#noFramegrabs ul {
+margin: 20px;
+padding: 0;
+}
+
+div#noFramegrabs ul li {
+list-style: square;
+margin: 0 0 5px 0;
+}
+
+div#noFramegrabs a {
+color: #99ccff;
+}
+
+div#noFramegrabs a:hover {
+color: #66ffff;
+}
+
+
+
+
+#pageSelect {
+display: block;
+margin: 0 0 20px 0;
+max-width: 350px;
+}
+
+#videoSelect {
+display: block;
+margin: 0 0 20px 0;
+max-width: 350px;
+}
+
+#framegrabImages {
+border: 1px solid #999;
+margin: 0 0 20px 0;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+#framegrabImages > div {
+border-bottom: 1px dotted #ccc;
+cursor: pointer;
+position: relative;
+}
+
+#framegrabImages > div:last-child {
+border-bottom: none;
+border-width: 0px;
+}
+
+#framegrabImages img.framegrab  {
+display: block;
+position: relative;
+}
+
+#framegrabImages div.noFramegrab img.framegrab  {
+background: #b9a5a5;
+}
+
+#framegrabImages div.framegrabTimecode {
+background: white;
+color: black;
+font-size: 70%;
+font-weight: bold;
+height: 15px;
+opacity: 0.6;
+padding: 2px 5px 1px 5px;
+right: 10px;
+position: absolute;
+text-align: right;
+top: 10px;
+z-index: 1;
+}
+
+#framegrabImages div.noFramegrab div.framegrabTimecode {
+background: none;
+font-size: 140%;
+height: 30px;
+padding: 0;
+right: 98px;
+text-shadow: #cccccc 3px 3px 5px;
+top: 77px;
+}
+
+#framegrabImages div.noFramegrab div.framegrabTimecode:hover {
+opacity: 1;
+}
+
+#framegrabImages img.deleteFramegrab  {
+bottom: 10px;
+display: block;
+height: 20px;
+opacity: 0.6;
+right: 40px;
+position: absolute;
+width: 15px;
+z-index: 1;
+}
+
+#framegrabImages div.noFramegrab img.deleteFramegrab {
+right: 10px;
+}
+
+#framegrabImages img.saveFramegrab  {
+bottom: 10px;
+display: block;
+height: 19px;
+opacity: 0.6;
+right: 15px;
+position: absolute;
+z-index: 1;
+width: 18px;
+}
+
+#framegrabImages div.noFramegrab img.saveFramegrab  {
+display: none;
+}
+
+#framegrabImages img.saveFramegrab:hover  {
+opacity: 1;
+}
+
+div#buttons input {
+margin: 0 11px 0 0;
+width: 90px;
+}
